@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipo</title>
+    <style>
+        #conteudo{
+            margin-left: 110px;
+        }
+        body {
+            background-image: url(imagem_tophaus.PNG);
+            background-repeat: no-repeat;
+           
+            width: 1270px;
+            height: 720px;
+        }
+
+        header {
+            margin-left: 500px;
+            color: rgb(41, 18, 0);
+            font-size: 20pt;
+        }
+
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+            float: left;
+            border: 5px solid black;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .container>div {
+            flex: 1;
+            /*grow*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="conteudo">
+    <header>
+        <h1>Prototipo</h1>
+    </header>
+    <div class="container">
+        <div class="fakeimg" style="width: 400px; height: 300px ; float:left;">fake image</div>
+        &nbsp;
+        <div>
+        <div class="fakeimg" style="width: 650px; height: 240px ;float: right;">fake image</div>
+        &nbsp;
+        <div class="fakeimg" style="width: 650px; height: 32px; float: right;">fake image</div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="fakeimg" style="width: 300px; ">Left Stuff</div>
+        &nbsp;
+        <div class="fakeimg" style="width: 100px; ">Middle Stuff</div>
+        &nbsp;
+        <div class="fakeimg" style="width: 600px; ">Right Stuff</div>
+        <br style="clear: left;" />
+    </div>
+</div>
+</body>
+
+</html>
